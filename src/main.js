@@ -1,10 +1,8 @@
 import "./style.css";
 
-import { loginView }
-from "./views/loginView";
+import { loginView } from "./views/loginView.js";
 
-import { login }
-from "./controllers/login.controller";
+import { login } from "./controllers/login.controller.js";
 
 document.querySelector("#app").innerHTML =
   loginView();
@@ -12,17 +10,15 @@ document.querySelector("#app").innerHTML =
 const form =
   document.querySelector("#loginForm");
 
-form.addEventListener("submit",
-  async (e) => {
+form.addEventListener("submit", async (e) => {
 
-    e.preventDefault();
+  e.preventDefault();
 
-    const email =
-      document.querySelector("#email").value;
+  const email =
+    document.querySelector("#email").value;
 
-    const password =
-      document.querySelector("#password").value;
+  const password =
+    document.querySelector("#password").value;
 
-    await login(email, password);
-  }
-);
+  await login(email, password);
+});

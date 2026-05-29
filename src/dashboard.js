@@ -1,7 +1,6 @@
 import "./style.css";
 
-import { protectRoute }
-from "./helpers/auth";
+import { protectRoute } from "./helpers/auth";
 
 import {
   getTasks,
