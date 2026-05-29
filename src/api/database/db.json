@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@test.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Juan",
+      "email": "juan@test.com",
+      "password": "1234",
+      "role": "user"
+    }
+  ],
+
+  "todo_list": [
+    {
+      "id": 1,
+      "id_user": 2,
+      "title": "Comprar comida",
+      "description": "Ir al supermercado",
+      "status": "initial"
+    }
+  ]
+}
